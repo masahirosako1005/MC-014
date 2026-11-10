@@ -1,0 +1,40 @@
+/* 管理画面のスタイル（ユーザー向けとは別） */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Yu Gothic UI", "Meiryo", system-ui, sans-serif; color: #1f2a4a; background: #f3f5f8; font-size: 14px; }
+.hidden { display: none !important; }
+.muted { color: #6b7593; }
+.err { color: #b3261e; min-height: 1.2em; }
+.login { display: grid; place-items: center; min-height: 100vh; }
+.card { background: #fff; border: 1px solid #d5dae6; border-radius: 12px; padding: 18px; }
+.login .card { width: 320px; display: grid; gap: 10px; }
+label { display: grid; gap: 4px; font-weight: 700; }
+input, select, textarea { font: inherit; padding: 6px 8px; border: 1px solid #b8bfd0; border-radius: 8px; background: #fff; }
+textarea { width: 100%; min-height: 90px; }
+button { font: inherit; padding: 6px 14px; border-radius: 8px; border: 1px solid #005a73; background: #007190; color: #fff; cursor: pointer; font-weight: 700; }
+button.sub { background: #fff; color: #007190; }
+#app { display: grid; grid-template-columns: 200px 1fr; min-height: 100vh; }
+#nav { background: #18214a; color: #fff; display: flex; flex-direction: column; padding: 14px 10px; gap: 2px; position: sticky; top: 0; height: 100vh; }
+#nav h1 { font-size: 18px; margin: 0 0 12px 6px; }
+#nav h1 small { display: block; font-size: 11px; color: #b5decc; }
+#nav a { color: #dfe6ff; text-decoration: none; padding: 7px 10px; border-radius: 8px; }
+#nav a.on, #nav a:hover { background: #2b3670; color: #ffdd00; }
+#nav button { margin-top: auto; background: #2b3670; border-color: #2b3670; }
+main { padding: 20px 26px; overflow: auto; }
+h2 { margin: 0 0 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.stat b { display: block; font-size: 26px; color: #007190; }
+table { border-collapse: collapse; width: 100%; background: #fff; border: 1px solid #d5dae6; border-radius: 10px; overflow: hidden; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eceff5; vertical-align: top; }
+th { background: #eef2f8; font-size: 12px; }
+tr.unread td { background: #fffbe0; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.pill { display: inline-block; padding: 0 8px; border-radius: 10px; background: #e3f2ec; font-size: 12px; }
+.pill.warn { background: #ffe9e6; }
+.w-rain { background: #cfe3ff; } .w-sun { background: #fff3b0; } .w-cloud { background: #e6e8ee; }
+pre { white-space: pre-wrap; background: #fff; border: 1px solid #d5dae6; padding: 10px; border-radius: 8px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+.thumb { width: 54px; height: 54px; object-fit: cover; }
+.thumb.big { width: 110px; height: 110px; border-radius: 50%; }
+.chk { display: inline-flex; gap: 4px; align-items: center; font-weight: 600; margin-right: 10px; }
+.status-pending { border-left: 6px solid #e0b800; } .status-approved { border-left: 6px solid #4caf87; } .status-rejected { border-left: 6px solid #d9534f; }

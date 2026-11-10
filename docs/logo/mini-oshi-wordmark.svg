@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" width="440" height="120" role="img" aria-label="ミニ推し！">
+  <title>ミニ推し！ 文字ロゴ</title>
+  <!-- 丸い先端の同じ太さの線（モノライン）で描いた文字。フォントに頼らず、すべて線のデータ。紺 #1F2A4A、ティール #007190 -->
+  <g fill="none" stroke="#1F2A4A" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(14 21)">
+    <!-- ミ -->
+    <path d="M14 10 L48 16 M10 36 L44 42 M6 62 L54 71"/>
+    <!-- ニ -->
+    <path transform="translate(76 0)" d="M12 20 H48 M4 66 H58"/>
+    <!-- 推（扌＋隹） -->
+    <path transform="translate(152 0)" d="M0 24 H26 M14 2 V68 Q14 76 6 72 M0 58 L28 46 M46 2 L38 22 M44 16 V78 M64 0 L68 8 M44 16 H92 M66 16 V76 M66 35 H88 M66 55 H88 M44 77 H94"/>
+    <!-- し -->
+    <path transform="translate(266 0)" d="M16 2 V46 Q16 72 38 72 Q54 72 64 56"/>
+  </g>
+  <!-- ！: 線の下の点を、アイコン（案A）と同じ目のあるピンにする -->
+  <g transform="translate(372 21)">
+    <path d="M12 2 V40" fill="none" stroke="#007190" stroke-width="9" stroke-linecap="round"/>
+    <path d="M12 50c-8 0-13.5 5.8-13.5 13 0 10 13.5 20 13.5 20s13.5-10 13.5-20c0-7.2-5.5-13-13.5-13z" fill="#007190"/>
+    <circle cx="8" cy="62" r="2.2" fill="#FFFFFF"/>
+    <circle cx="16" cy="62" r="2.2" fill="#FFFFFF"/>
+  </g>
+</svg>

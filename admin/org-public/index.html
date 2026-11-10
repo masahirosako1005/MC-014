@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ミニ推し！ 自治体の管理画面</title>
+  <link rel="stylesheet" href="org.css">
+  <link rel="stylesheet" href="/vendor/leaflet.css">
+  <link rel="stylesheet" href="/shared/mapedit.css">
+</head>
+<body>
+  <div id="login" class="login hidden">
+    <form id="loginForm" class="card">
+      <h1>ミニ推し！<small>自治体・団体の管理画面</small></h1>
+      <label>ログインID <input name="loginId" autocomplete="username" required></label>
+      <label>パスワード <input name="password" type="password" autocomplete="current-password" required></label>
+      <p id="loginMsg" class="err"></p>
+      <button type="submit">ログイン</button>
+      <p class="muted">アカウントは事務局が発行します。</p>
+    </form>
+  </div>
+  <div id="app" class="hidden">
+    <nav id="nav">
+      <h1>ミニ推し！<small id="orgName"></small></h1>
+      <a href="#dashboard">ダッシュボード</a>
+      <a href="#characters">キャラクター</a>
+      <a href="#codes">獲得コードとQR</a>
+      <a href="#events">イベント</a>
+      <a href="#places">場所</a>
+      <a href="#reports">解釈違いの報告</a>
+      <a href="#requests">申請の履歴</a>
+      <a href="#account">アカウント</a>
+      <button id="logout" type="button">ログアウト</button>
+    </nav>
+    <main id="main"></main>
+  </div>
+  <script src="/vendor/leaflet.js"></script>
+  <script type="module" src="org.js"></script>
+</body>
+</html>

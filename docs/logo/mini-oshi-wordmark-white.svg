@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 120" width="440" height="120" role="img" aria-label="ミニ推し！">
+  <title>ミニ推し！ 文字ロゴ（暗い背景用）</title>
+  <!-- 暗い背景に置く版。文字は白、！は黄色 -->
+  <g fill="none" stroke="#FFFFFF" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(14 21)">
+    <path d="M14 10 L48 16 M10 36 L44 42 M6 62 L54 71"/>
+    <path transform="translate(76 0)" d="M12 20 H48 M4 66 H58"/>
+    <path transform="translate(152 0)" d="M0 24 H26 M14 2 V68 Q14 76 6 72 M0 58 L28 46 M46 2 L38 22 M44 16 V78 M64 0 L68 8 M44 16 H92 M66 16 V76 M66 35 H88 M66 55 H88 M44 77 H94"/>
+    <path transform="translate(266 0)" d="M16 2 V46 Q16 72 38 72 Q54 72 64 56"/>
+  </g>
+  <g transform="translate(372 21)">
+    <path d="M12 2 V40" fill="none" stroke="#FFDD00" stroke-width="9" stroke-linecap="round"/>
+    <path d="M12 50c-8 0-13.5 5.8-13.5 13 0 10 13.5 20 13.5 20s13.5-10 13.5-20c0-7.2-5.5-13-13.5-13z" fill="#FFDD00"/>
+    <circle cx="8" cy="62" r="2.2" fill="#1F2A4A"/>
+    <circle cx="16" cy="62" r="2.2" fill="#1F2A4A"/>
+  </g>
+</svg>

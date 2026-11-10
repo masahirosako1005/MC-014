@@ -1,0 +1,10 @@
+node_modules/
+Password.txt.txt
+data/state.json
+data/content.json
+data/spot-db.json
+tools/.cache/
+*.log
+data/orgs.json
+public/assets/uploads/
+data/rag.json

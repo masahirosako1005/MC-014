@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96">
+  <!-- ミニ推し！のアイコン（案A・目だけのピン）。黄色の角丸に、紺のピンと黄色の目 -->
+  <rect width="96" height="96" rx="22" fill="#FFDD00"/>
+  <path d="M48 18c-13 0-23 10-23 23 0 17 23 37 23 37s23-20 23-37c0-13-10-23-23-23z" fill="#1F2A4A"/>
+  <circle cx="40.5" cy="40" r="4.5" fill="#FFDD00"/>
+  <circle cx="55.5" cy="40" r="4.5" fill="#FFDD00"/>
+</svg>

@@ -1,0 +1,77 @@
+/* 管理画面のスタイル（ユーザー向けとは別） */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Yu Gothic UI", "Meiryo", system-ui, sans-serif; color: #1f2a4a; background: #f3f5f8; font-size: 14px; }
+.hidden { display: none !important; }
+.muted { color: #6b7593; }
+.err { color: #b3261e; min-height: 1.2em; }
+.login { display: grid; place-items: center; min-height: 100vh; }
+.card { background: #fff; border: 1px solid #d5dae6; border-radius: 12px; padding: 18px; }
+.login .card { width: 320px; display: grid; gap: 10px; }
+label { display: grid; gap: 4px; font-weight: 700; }
+input, select, textarea { font: inherit; padding: 6px 8px; border: 1px solid #b8bfd0; border-radius: 8px; background: #fff; }
+textarea { width: 100%; min-height: 90px; }
+button { font: inherit; padding: 6px 14px; border-radius: 8px; border: 1px solid #005a73; background: #007190; color: #fff; cursor: pointer; font-weight: 700; }
+button.sub { background: #fff; color: #007190; }
+#app { display: grid; grid-template-columns: 200px 1fr; min-height: 100vh; }
+#nav { background: #18214a; color: #fff; display: flex; flex-direction: column; padding: 14px 10px; gap: 2px; position: sticky; top: 0; height: 100vh; }
+#nav h1 { font-size: 18px; margin: 0 0 12px 6px; }
+#nav h1 small { display: block; font-size: 11px; color: #b5decc; }
+#nav a { color: #dfe6ff; text-decoration: none; padding: 7px 10px; border-radius: 8px; }
+#nav a.on, #nav a:hover { background: #2b3670; color: #ffdd00; }
+#nav button { margin-top: auto; background: #2b3670; border-color: #2b3670; }
+main { padding: 20px 26px; overflow: auto; }
+h2 { margin: 0 0 14px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 12px; margin-bottom: 16px; }
+.stat b { display: block; font-size: 26px; color: #007190; }
+table { border-collapse: collapse; width: 100%; background: #fff; border: 1px solid #d5dae6; border-radius: 10px; overflow: hidden; }
+th, td { text-align: left; padding: 6px 8px; border-bottom: 1px solid #eceff5; vertical-align: top; }
+th { background: #eef2f8; font-size: 12px; }
+tr.unread td { background: #fffbe0; }
+.row { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; margin-bottom: 12px; }
+.pill { display: inline-block; padding: 0 8px; border-radius: 10px; background: #e3f2ec; font-size: 12px; }
+.pill.warn { background: #ffe9e6; }
+.w-rain { background: #cfe3ff; } .w-sun { background: #fff3b0; } .w-cloud { background: #e6e8ee; }
+pre { white-space: pre-wrap; background: #fff; border: 1px solid #d5dae6; padding: 10px; border-radius: 8px; }
+.two { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+
+/* ---- 自治体の管理画面だけの部品 ---- */
+.login h1 small, #nav h1 small { display: block; font-size: 12px; color: #6b7593; font-weight: 700; margin-top: 4px; }
+#nav { background: #0f3d4c; }
+#nav a.on, #nav a:hover { background: #17586c; }
+#nav button { background: #17586c; border-color: #17586c; }
+.char-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; }
+.char-card { display: flex; gap: 12px; align-items: center; cursor: pointer; }
+.face { width: 64px; height: 64px; border-radius: 50%; border: 2px solid #1f2a4a; background-size: cover; background-position: center top; flex: none; }
+.face.big { width: 110px; height: 110px; }
+.form { display: grid; gap: 14px; max-width: 900px; }
+.form .row label { flex: 1; min-width: 160px; }
+.sliders { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 6px 18px; }
+.sliders label { display: grid; grid-template-columns: 80px 1fr 40px; align-items: center; gap: 8px; font-weight: 600; }
+.notice { background: #fffbe0; border: 1px solid #e8d77a; border-radius: 10px; padding: 10px 12px; }
+.ok { background: #e3f2ec; border-color: #9fcfba; }
+.qr-sheet { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.qr-card { text-align: center; border: 1px dashed #9aa1b9; border-radius: 12px; padding: 12px; background: #fff; break-inside: avoid; }
+.qr-card img { width: 180px; height: 180px; }
+.qr-card .code { font-family: ui-monospace, Consolas, monospace; font-weight: 700; letter-spacing: 0.04em; }
+.qr-card h4 { margin: 6px 0 2px; }
+.thumb { width: 54px; height: 54px; }
+.status-pending { background: #fff3b0; } .status-approved { background: #e3f2ec; } .status-rejected { background: #ffe9e6; }
+@media print {
+  #nav, .no-print { display: none !important; }
+  #app { display: block; }
+  main { padding: 0; }
+  body { background: #fff; }
+  .qr-card { border: 1px solid #000; }
+}
+
+.ai-card { border-color: #9fcfba; background: linear-gradient(180deg, #f2fbf7, #fff); }
+.reasons { margin: 4px 0 0; padding-left: 18px; display: grid; gap: 2px; }
+.sliders.nums label { grid-template-columns: 110px 1fr 74px; }
+.numv { width: 74px; }
+.flash { animation: flash 1.1s ease-out; }
+@keyframes flash { from { box-shadow: 0 0 0 4px rgba(0, 113, 144, 0.35); } to { box-shadow: none; } }
+
+.rag-card { border-color: #c9b8f0; background: linear-gradient(180deg, #f6f2ff, #fff); }
+.rag-docs { margin: 6px 0 0; padding-left: 18px; display: grid; gap: 4px; }
+.sources blockquote { margin: 6px 0; padding: 6px 10px; border-left: 4px solid #c9b8f0; background: #faf8ff; border-radius: 0 8px 8px 0; font-size: 13px; white-space: pre-wrap; }
+.sources h4 { margin: 10px 0 4px; }

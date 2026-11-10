@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#007190">
+  <title>ミニ推し！</title>
+  <meta name="description" content="獲得した推しが、実際の町を自分の意思で旅する。その行動を楽しむアプリ。">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="vendor/leaflet.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ロゴ「ミニ推し！」（「！」だけ青緑）。スマホでは上、PCでは左の列の上 -->
+  <header class="topbar">
+    <a class="logo" href="#/home" aria-label="ミニ推し！ ホーム">
+      <img class="logo-mark" src="favicon.svg" alt="" width="32" height="32">
+      <!-- 文字ロゴは、依頼者から受け取った画像（背景を透明にしたもの。元の画像は assets/brand/wordmark-original.png） -->
+      <img class="logo-word" src="assets/brand/wordmark.png" alt="ミニ推し！" width="142" height="42">
+    </a>
+  </header>
+
+  <!-- 大メニュー（ホーム、出会う、ミニ推し、推しのおすすめ、観光ルート、エリア、設定）。
+       推しのおすすめは、依頼者の指定で観光ルートの手前に置く（2026-11-09） -->
+  <nav class="tabs" aria-label="メニュー">
+    <a href="#/home" data-tab="home"><span class="tab-ic" data-icon="home"></span><span class="tab-label">ホーム</span></a>
+    <a href="#/meet" data-tab="meet"><span class="tab-ic" data-icon="meet"></span><span class="tab-label">出会う</span></a>
+    <a href="#/oshi" data-tab="oshi"><span class="tab-ic" data-icon="oshi"></span><span class="tab-label">ミニ推し</span></a>
+    <a href="#/recommend" data-tab="recommend" class="tab-rec"><span class="tab-ic" data-icon="star"></span><span class="tab-label">推しの<br class="sp-br">おすすめ</span></a>
+    <a href="#/routes" data-tab="routes"><span class="tab-ic" data-icon="route"></span><span class="tab-label">観光ルート</span></a>
+    <a href="#/areas" data-tab="areas"><span class="tab-ic" data-icon="area"></span><span class="tab-label">エリア</span></a>
+    <a href="#/settings" data-tab="settings"><span class="tab-ic" data-icon="settings"></span><span class="tab-label">設定</span></a>
+  </nav>
+
+  <main id="view" tabindex="-1"></main>
+
+  <noscript><p class="noscript">このアプリは JavaScript を使います。</p></noscript>
+  <script src="vendor/leaflet.js"></script>
+  <script src="vendor/jsQR.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
